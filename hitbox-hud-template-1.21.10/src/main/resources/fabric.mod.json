@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hitboxhud",
+  "version": "1.0.0",
+  "name": "PvP Hitbox HUD",
+  "description": "Overhauls the F3+B entity hitbox renderer for players: distance-based color gradient, translucent body fill, and a facing-direction cap instead of the vanilla look-vector line.",
+  "authors": [
+    "you"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hitboxhud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.hitboxhud.HitboxHudClient"
+    ]
+  },
+  "mixins": [
+    "hitboxhud.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.10",
+    "java": ">=21"
+  },
+  "custom": {
+    "fabric-loom:injected_interfaces": {}
+  }
+}
